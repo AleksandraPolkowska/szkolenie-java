@@ -22,6 +22,8 @@ class Variables {
         System.out.println ("Koty jedza " + wagaKarmy + " kg karmy dziennie ");
         System.out.println ("Koty jedza " + zapotrzebowanie + " kg karmy tygodniowo ");
 
+        //komentarz
+
 
         //
 
