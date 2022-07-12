@@ -1,13 +1,18 @@
-class Variables {
+package pl.cyber.trainees;
+
+public class SimpleApp {
+
     // utworzenie 2 zmiennych typu tekstowego i ich inicjalizacja
     public static String SEPARATOR_Spacja = " ";
+
+
     public static void main(String[] args) {
         String a = "Ala"; // tworzy zmienna i przypisuje do niej wartosc
         String b = "ma"; // tworzy druga zmienna i przypisuje do niej wartosc
         String c = "kota"; //trzecia zmienna
         System.out.println (a + SEPARATOR_Spacja + b + SEPARATOR_Spacja + c); // dodawanie tekstow do siebie - nie wiem jak dodać spacje
 
-    // utworzenie 2 zmiennych typu liczba calkowita ich inicjalizacja i dodawanie
+        // utworzenie 2 zmiennych typu liczba calkowita ich inicjalizacja i dodawanie
         int kotyAli = 2; // tworzy zmienna i przypisuje do niej wartosc
         int kotyOli = 3; // obie liczby sa sobie rowne
         int sumaKotow = kotyAli + kotyOli;
@@ -30,5 +35,3 @@ class Variables {
 
     }
 }
-
-
