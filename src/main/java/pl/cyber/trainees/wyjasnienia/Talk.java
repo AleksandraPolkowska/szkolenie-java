@@ -5,6 +5,7 @@ import java.math.BigDecimal;
 public class Talk {   // tu zaczyna się klasa
 
     private String SPACJA = " ";  // parametr klasy
+    private String PRZAECINEK = ",";  // parametr klasy
 
     public String nazwa_metody(String parametr) { // tu zaczyna się klasa nr 1
         //Metoda coś wykonuje
