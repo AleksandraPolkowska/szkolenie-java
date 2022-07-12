@@ -9,6 +9,7 @@ public class SimpleAppOld {
     enum Plec {kobieta, mezczyzna}
 
     public static String SEPARATOR_SPACJA = " ";
+    public static String PRZECINEK = ",";
 
     public static void main(String[] args) {
 
