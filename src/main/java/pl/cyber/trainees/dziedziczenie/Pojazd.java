@@ -15,7 +15,7 @@ public class Pojazd {
    }
    //Alt + Insert - menu kontekstowe do generowania kodu, wybieramy opcję Constructor
 
-    public Pojazd(String marka, String rocznik, String napęd) {
+    public Pojazd(String marka, String rocznik, String naped) {
         this.marka = marka;
         this.rocznik = rocznik;
         this.naped = naped;
@@ -24,7 +24,7 @@ public class Pojazd {
     public String toString () {
        return "Marka: " + this.marka
                + "rocznik: " + this.rocznik
-               + "napęd: " + this.naped;
+               + "naped: " + this.naped;
     }
     // gettery ktorych zadaniem jest pobieranie informacji z pól klasy do dalszego przetwarzania
 

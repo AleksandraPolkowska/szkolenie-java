@@ -20,12 +20,12 @@ public class Model extends Pojazd {
     public Model(
            final String marka,
            final String rocznik,
-           final String napęd,
+           final String naped,
            final String nazwa,
            final Integer przebieg,
            final Double pojemnoscSilnika,
            final Kolor kolor) {
-        super(marka, rocznik, napęd);
+        super(marka, rocznik, naped);
         this.nazwa = nazwa;
         this.przebieg = przebieg;
         this.pojemnoscSilnika = pojemnoscSilnika;
@@ -33,13 +33,13 @@ public class Model extends Pojazd {
     }
     @Override // adnotacja wykorzystywana do przesłaniania metod
     public String toString() {
-        return "Marka: ";
-        +getMarka()
+        return "Marka: "
+        + getMarka()
                 + " rocznik: " + getRocznik()
-                + " napęd: " + getNaped()
+                + " naped: " + getNaped()
                 + " nazwa modelu: " + this.nazwa
                 + " przebieg: " + this.przebieg
-                + " pojemnoscSilnika: " + this.pojemnoscSilnika;
+                + " pojemnoscSilnika: " + this.pojemnoscSilnika
                 + " kolor: " + this.kolor;
     }
     public Double getPojemnoscSilnika() {
