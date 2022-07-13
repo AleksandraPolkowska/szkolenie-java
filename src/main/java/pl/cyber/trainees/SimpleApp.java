@@ -30,7 +30,7 @@ public class SimpleApp {
         //komentarz
 
 
-        //
+        //komentarz nowy_test
 
 
     }
