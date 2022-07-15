@@ -4,10 +4,10 @@ package pl.cyber.trainees.dziedziczenie;
 // super - słowo kluczowe stosowane pry dziedziczeniu odnosi się do konstruktora klasy nadrzędnej
 public class Model extends Pojazd {
 
-    private final String nazwa;
-    private final Integer przebieg;
-    private final Double pojemnoscSilnika;
-    private final Kolor kolor;
+    private String nazwa;
+    private Integer przebieg;
+    private Double pojemnoscSilnika;
+    private Kolor kolor;
 
     public Model () {
         super ();
@@ -18,13 +18,13 @@ public class Model extends Pojazd {
     }
 
     public Model(
-           final String marka,
-           final String rocznik,
-           final String naped,
-           final String nazwa,
-           final Integer przebieg,
-           final Double pojemnoscSilnika,
-           final Kolor kolor) {
+            String marka,
+            String rocznik,
+            String naped,
+            String nazwa,
+            Integer przebieg,
+            Double pojemnoscSilnika,
+            Kolor kolor) {
         super(marka, rocznik, naped);
         this.nazwa = nazwa;
         this.przebieg = przebieg;
@@ -56,4 +56,19 @@ public class Model extends Pojazd {
         return nazwa;
 }
 
+    public void setNazwa(String nazwa) {
+        this.nazwa = nazwa;
+    }
+
+    public void setPrzebieg(Integer przebieg) {
+        this.przebieg = przebieg;
+    }
+
+    public void setPojemnoscSilnika(Double pojemnoscSilnika) {
+        this.pojemnoscSilnika = pojemnoscSilnika;
+    }
+
+    public void setKolor(Kolor kolor) {
+        this.kolor = kolor;
+    }
 }
