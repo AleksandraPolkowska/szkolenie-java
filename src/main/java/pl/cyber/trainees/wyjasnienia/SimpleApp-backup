@@ -254,3 +254,64 @@ tekst
 // deklaracja zmiennej zalecana przy systemach księgowych
 
 
+package pl.cyber.trainees;
+
+public class SimpleApp {
+
+    // utworzenie 2 zmiennych typu tekstowego i ich inicjalizacja
+    public static String SEPARATOR_Spacja = " ";
+
+
+    public static void main(String[] args) {
+        String a = "Ala"; // tworzy zmienna i przypisuje do niej wartosc
+        String b = "ma"; // tworzy druga zmienna i przypisuje do niej wartosc
+        String c = "kota"; //trzecia zmienna
+        System.out.println (a + SEPARATOR_Spacja + b + SEPARATOR_Spacja + c); // dodawanie tekstow do siebie - nie wiem jak dodać spacje
+
+        // utworzenie 2 zmiennych typu liczba calkowita ich inicjalizacja i dodawanie
+        int kotyAli = 2; // tworzy zmienna i przypisuje do niej wartosc
+        int kotyOli = 3; // obie liczby sa sobie rowne
+        int sumaKotow = kotyAli + kotyOli;
+        System.out.println ("Ala ma " + kotyAli );
+        System.out.println ("Ola ma " + kotyOli);
+        System.out.println ("Ala i Ola maja razem " + sumaKotow + " kotow");
+
+        // utworzenie 2 zmiennych przecinkowych ich inicjalizacja i mnożenie
+        double wagaKarmy = 1.12;
+        double liczbaDni = 7;
+        var zapotrzebowanie = wagaKarmy * liczbaDni;
+        System.out.println ("Koty jedza " + wagaKarmy + " kg karmy dziennie ");
+        System.out.println ("Koty jedza " + zapotrzebowanie + " kg karmy tygodniowo ");
+
+        //komentarz
+
+
+        //komentarz nowy_test
+
+        package pl.cyber.trainees;
+
+
+        import pl.cyber.trainees.dziedziczenie.Kolor;
+        import pl.cyber.trainees.dziedziczenie.Model;
+        public class SimpleAppOld {
+
+
+            public static void main(String[] args) {
+
+                //Ctrl + P - podpowiadanie w użyciu metod / deklaracji obiektów dostępnych parametrów
+
+                Model modelPojazdu1 = new Model ();
+                var modelPojazdu2 = new Model ( "VW", "2020", "przód",  "Passat", 10000,
+                2.0, Kolor.valueOf( "ZIELONY"));
+                var modelPojazdu3 = new Model ( "VW", "2000", "przód",  "Passat", 30000,
+                        2.0, Kolor.valueOf( "NIEBIESKI"));
+                System.out.println(modelPojazdu1.toString());
+                System.out.println(modelPojazdu1);
+
+                System.out.println(modelPojazdu2.getMarka());
+                System.out.println(modelPojazdu2.getNaped());
+                System.out.println(modelPojazdu2.getNazwa());
+
+            }
+
+            }
