@@ -26,6 +26,28 @@ public class SimpleAppOld {
         System.out.println(firstNameFromFile);
         System.out.println(modelPojazduZPliku);
 
+        // praca domowa zadanie 1
+        // odczyt 5 intigerów z klawiatury
+
+        OdczytDanych odczytDanych1 = new OdczytDanych();
+        System.out.println("Podaj pierwszą liczbę całkowitą");
+        Integer liczbaCalkowita1 = odczytDanych1.wprowadzonaWartoscZklawiatury2;
+        System.out.println("Podaje drugą liczbę całkowitą");
+        Integer liczbaCalkowita2= odczytDanych.wprowadzonaWartoscZklawiatury2;
+        System.out.println("Podaje trzecią liczbę całkowitą");
+        Integer liczbaCalkowita3= odczytDanych.wprowadzonaWartoscZklawiatury2;
+        System.out.println("Podaje czwartą liczbę całkowitą");
+        Integer liczbaCalkowita4= odczytDanych.wprowadzonaWartoscZklawiatury2;
+        System.out.println("Podaje piątą liczbę całkowitą");
+        Integer liczbaCalkowita5= odczytDanych.wprowadzonaWartoscZklawiatury2;
+
+        // dodawanie wprowadzonych liczb
+
+
+
+
+
+
 
         //Ctrl + P - podpowiadanie w użyciu metod / deklaracji obiektów dostępnych parametrów
 
@@ -57,6 +79,30 @@ public class SimpleAppOld {
         strings.add("dwa");
         strings.add("trzy");
         System.out.println(strings);
+
+       // praca domowa ponizej zad2
+
+      //  Model samochod1 = new Model();
+      //  Model samochod2 = new Model();
+       // Model samochod3 = new Model();
+
+
+      //  System.out.println(samochod1.toString());
+      //  System.out.println(samochod2.toString());
+      //  System.out.println(samochod3.toString());
+
+        // metoda ktora policzy kilometry:
+
+       // Integer przebieg (rozpisac dalej)
+
+        //       metoda odczyt przebiegów z trzech plików w formie petli for
+         //   nastepnie metoda ktora zsumuje powyzsze dane
+
+        // praca domowa zadanie 1:
+
+        // koniec pracy domowej
+
+        // notatki:
 
         // List<Double> listaDouble = new ArrayList<>(Arrays.asList( //ctrl+p oczekuje zmiennej w postaci doubla
         //       1.0,

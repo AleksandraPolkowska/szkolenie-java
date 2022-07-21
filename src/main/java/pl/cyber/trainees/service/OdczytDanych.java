@@ -8,13 +8,27 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class OdczytDanych {
+
+    // praca domowa 1
+
+    public Integer wprowadzonaWartoscZklawiatury2(){
+
+    Scanner scanner = new Scanner(System.in);
+        return scan.nextLine();
+    }
+
+    // koniec pracy domowej 1
+
     public String wporwadzonaWartoscZklawiatury(){
         // Scanner -- obiekt pozwalajacy na odczyt danych z klawiatury
         // system.in - obiekt reprezenujacy InputStream, ktory odpowiada za przetwarzanie danych
         Scanner scan = new Scanner(System.in);
 
         return scan.nextLine();
-    }
+
+
+        
+    /*}
     public String daneZPliku(File plikZew) throws FileNotFoundException { // throws mowi aplikacji zeby pojawiajacy sie blad przeniesc do miejsca wykonania metody
         Scanner scan = new Scanner(plikZew);
         return scan.nextLine();
@@ -34,7 +48,24 @@ public class OdczytDanych {
        modelPojazdu.setPojemnoscSilnika(Double.valueOf(tablicaPliku[5]));
        modelPojazdu.setKolor(Kolor.valueOf(tablicaPliku[6]));
 
-
     return modelPojazdu;
-    }
+
+     //  public Model odczytSamochodu1(File plikZew) throws FileNotFoundException
+    //   {
+    //       Model samochod1 = new samochod1();
+    //       Scanner scan = new Scanner(plikZew);
+    //       String liniaWpliku = scan.nextLine();
+    //       String [] tablicaPliku = liniaWpliku.split(", ");
+    //       samochod1.setMarka(tablicaPliku[0]);
+    //       samochod1.setRocznik(tablicaPliku[1]);
+    //       samochod1.setNaped(tablicaPliku[2]);
+    //       samochod1.setNazwa(tablicaPliku[3]);
+    //       samochod1.setPrzebieg(Integer.valueOf(tablicaPliku[4]));
+    //       samochod1.setPojemnoscSilnika(Double.valueOf(tablicaPliku[5]));
+    //       samochod1.setKolor(Kolor.valueOf(tablicaPliku[6]));
+
+
+     //      return odczytSamochodu1;
+     //  }
+   // }*/
 }
