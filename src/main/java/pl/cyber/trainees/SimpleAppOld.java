@@ -1,6 +1,8 @@
 package pl.cyber.trainees;
 
 
+import pl.cyber.trainees.calculator.Dodawanie;
+import pl.cyber.trainees.calculator.Mnozenie;
 import pl.cyber.trainees.dziedziczenie.Kolor;
 import pl.cyber.trainees.dziedziczenie.Model;
 import pl.cyber.trainees.service.OdczytDanych;
@@ -31,22 +33,47 @@ public class SimpleAppOld {
 
         OdczytDanych odczytDanych1 = new OdczytDanych();
         System.out.println("Podaj pierwszą liczbę całkowitą");
-        Integer liczbaCalkowita1 = odczytDanych1.wprowadzonaWartoscZklawiatury2;
+        Integer a = odczytDanych1.wprowadzonaWartoscZklawiatury2;
         System.out.println("Podaje drugą liczbę całkowitą");
-        Integer liczbaCalkowita2= odczytDanych.wprowadzonaWartoscZklawiatury2;
+        Integer b = odczytDanych.wprowadzonaWartoscZklawiatury2;
         System.out.println("Podaje trzecią liczbę całkowitą");
-        Integer liczbaCalkowita3= odczytDanych.wprowadzonaWartoscZklawiatury2;
+        Integer c = odczytDanych.wprowadzonaWartoscZklawiatury2;
         System.out.println("Podaje czwartą liczbę całkowitą");
-        Integer liczbaCalkowita4= odczytDanych.wprowadzonaWartoscZklawiatury2;
+        Integer d = odczytDanych.wprowadzonaWartoscZklawiatury2;
         System.out.println("Podaje piątą liczbę całkowitą");
-        Integer liczbaCalkowita5= odczytDanych.wprowadzonaWartoscZklawiatury2;
+        Integer e = odczytDanych.wprowadzonaWartoscZklawiatury2;
 
-        // dodawanie wprowadzonych liczb
+        List<Integer> liczbyCalkowite = new ArrayList<>(a, b, c, d, e);
+        liczbyCalkowite.add(a);
+        liczbyCalkowite.add(b);
+        liczbyCalkowite.add(c);
+        liczbyCalkowite.add(d);
+        liczbyCalkowite.add(e);
+        System.out.println("Dodawanie intigerów" + (a + b + c + d + e));
+        // mnożenie? pętla for która by mnożyła każdą liczbę, ale nie wiem jak zapisać warunek
+
+        public void mnozenieElementowListy liczbyCalkowite;
+        (List <Integer> lista){
+            Integer result = 10;
+
+            for (Integer element : lista) {
+                System.out.println("Teraz wykonuję mnożenie: " + element * result);
+                result = Mnozenie.multiplication(result, element);
+
+            }
+        //drugi sposob?
 
 
+        public static int add(a, b, c, d, e) {
+            int result = a + b + c + d + e;
+            return result;
 
+            public static int multiplication (a, b, c, d, e){
+                int result = a * 10, b * 10, c *10, d * 10, e * 10
+                        return result
+            }
 
-
+            // koniec pracy domowej 1
 
 
         //Ctrl + P - podpowiadanie w użyciu metod / deklaracji obiektów dostępnych parametrów
@@ -80,16 +107,16 @@ public class SimpleAppOld {
         strings.add("trzy");
         System.out.println(strings);
 
-       // praca domowa ponizej zad2
+       // praca domowa 2
 
-      //  Model samochod1 = new Model();
-      //  Model samochod2 = new Model();
-       // Model samochod3 = new Model();
+       Model samochod1 = new Model();
+       Model samochod2 = new Model();
+       Model samochod3 = new Model();
 
 
-      //  System.out.println(samochod1.toString());
-      //  System.out.println(samochod2.toString());
-      //  System.out.println(samochod3.toString());
+       System.out.println(samochod1.toString());
+       System.out.println(samochod2.toString());
+       System.out.println(samochod3.toString());
 
         // metoda ktora policzy kilometry:
 
@@ -98,9 +125,6 @@ public class SimpleAppOld {
         //       metoda odczyt przebiegów z trzech plików w formie petli for
          //   nastepnie metoda ktora zsumuje powyzsze dane
 
-        // praca domowa zadanie 1:
-
-        // koniec pracy domowej
 
         // notatki:
 
