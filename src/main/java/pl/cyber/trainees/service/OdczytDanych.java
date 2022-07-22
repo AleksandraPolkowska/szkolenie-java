@@ -24,8 +24,9 @@ public class OdczytDanych {
         // Scanner -- obiekt pozwalajacy na odczyt danych z klawiatury
         // system.in - obiekt reprezenujacy InputStream, ktory odpowiada za przetwarzanie danych
         Scanner scan = new Scanner(System.in);
+        System.out.println(("Podaj liczbę typu Integer: "));
 
-        return scan.nextLine();
+        return scan.nextInt();
 
 
         

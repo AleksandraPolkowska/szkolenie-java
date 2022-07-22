@@ -56,7 +56,7 @@ public class SimpleAppOld {
         (List <Integer> lista){
             Integer result = 10;
 
-            for (Integer element : lista) {
+            for (Integer element : integerList) {
                 System.out.println("Teraz wykonuję mnożenie: " + element * result);
                 result = Mnozenie.multiplication(result, element);
 
@@ -112,6 +112,8 @@ public class SimpleAppOld {
        Model samochod1 = new Model();
        Model samochod2 = new Model();
        Model samochod3 = new Model();
+
+     //  tutaj odczyt danych z pliku podac sciezke
 
 
        System.out.println(samochod1.toString());
