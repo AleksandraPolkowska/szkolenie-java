@@ -81,5 +81,4 @@ println("dodawanie nie równe 4"); <- zostanie wyświetlone
         return false;
     }
     }
-
 }

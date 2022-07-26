@@ -12,11 +12,13 @@ import java.io.File;  //importy zazwyczaj dodają się same ewemtualnie można j
 //endregion
 
 
+import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
 import pl.cyber.trainees.dziedziczenie.Kolor;
 import pl.cyber.trainees.dziedziczenie.Model;
 import pl.cyber.trainees.wyjasnienia.Basics;
 import pl.cyber.trainees.wyjasnienia.BasicsIntiger;
 import pl.cyber.trainees.wyjasnienia.InstrukcjeWarunkowe;
+import pl.cyber.trainees.wyjasnienia.PracaDomowa;
 
 //Linia public class SimpleApp. Opisuje definicję klasy o nazwie SimpleApp.
 //modyfikator dostępu klasy public / private
@@ -98,8 +100,25 @@ public class SimpleAppOld {
 
 
         InstrukcjeWarunkowe instrukcjeWarunkowe = new InstrukcjeWarunkowe();
-        InstrukcjeWarunkowe.sprawdzanieWarunku(1);
+        instrukcjeWarunkowe.sprawdzanieWarunku(1);
+
+        // tu zaczyna sie praca domowa
+
+        PracaDomowa pracaDomowa = new PracaDomowa();
+        pracaDomowa.ileMaszLat(32);
+        pracaDomowa.mojeImie("Aleksandra");
+        System.out.println(
+                pracaDomowa.liczbaParzysta(1560));
+        System.out.println(
+                pracaDomowa.liczbaPodzielnaPrzezTrzy(333));
+       // System.out.println(
+       //         pracaDomowa.potegowanie(3));
+
+        System.out.println(Math.pow(2.0,3.0));
+        System.out.println(Math.sqrt(9.0));
+
     }
+
 
     public String nazwaMEtoda() { //nawias może być pusty lub uzupełniony
         return "";
