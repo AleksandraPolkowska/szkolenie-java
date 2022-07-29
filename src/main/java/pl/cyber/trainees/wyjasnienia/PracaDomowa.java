@@ -38,12 +38,15 @@ public class PracaDomowa {
     // podniesienie do potęgi realizujemy przez bibliotekę Math i jej metodę pow(liczba, doJakiejPotęgi)
     // np. Math.pow(2,3)
 
-   // public static Integer potegowanie (Integer z){
-   //     Math.pow(z, 3);
-   //     return  ;
-   // }
+    //public static Double potegowanie (Double z, Double to){
+    //    return Math.pow(z, 3.0);
+    //}
+
 
     // 6. Napisz metodę, która jako argument przyjmuje liczbę i zwraca jej pierwiastek kwadratowy
     //pierwiastek kwadratowy realizujemy przez bibliotekę Math i jej metodę sqrt(number)
     //Math.sqrt(number)
-}
+
+} //public static Double pierwiastkowanie (Double n){
+  //    return Math.sqrt(n);
+  //}
