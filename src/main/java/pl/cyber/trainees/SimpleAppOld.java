@@ -111,8 +111,12 @@ public class SimpleAppOld {
                 pracaDomowa.liczbaParzysta(1560));
         System.out.println(
                 pracaDomowa.liczbaPodzielnaPrzezTrzy(333));
-       // System.out.println(
-       //         pracaDomowa.potegowanie(3.0));
+        System.out.println(
+                pracaDomowa.potegowanie(3.0, 5.0));
+        System.out.println(
+                pracaDomowa.pierwiastekKwadratowy(9));
+
+// drugi sposób na potęgi i pierwiastek kwadratowy
 
         System.out.println(Math.pow(2.0,3.0));
         System.out.println(Math.sqrt(9.0));

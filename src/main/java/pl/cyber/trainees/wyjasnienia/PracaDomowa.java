@@ -16,7 +16,7 @@ public class PracaDomowa {
     // Napisz metodę, która jako argument przyjmuje liczbę i zwraca true jeśli liczba jest parzysta.
 
     public boolean liczbaParzysta(Integer x) {
-        if (x%2==0) {
+        if (x % 2 == 0) {
             return true;
         } else {
             return false;
@@ -27,8 +27,8 @@ public class PracaDomowa {
     // 4. Napisz metodę, która jako argument przyjmuje liczbę
     // i zwraca true jeśli liczba jest podzielna przez 3 i przez 5.
 
-    public boolean liczbaPodzielnaPrzezTrzy (Integer y) {
-        if (y%3==0 && y%5==0){
+    public boolean liczbaPodzielnaPrzezTrzy(Integer y) {
+        if (y % 3 == 0 && y % 5 == 0) {
             return true;
         } else {
             return false;
@@ -38,15 +38,16 @@ public class PracaDomowa {
     // podniesienie do potęgi realizujemy przez bibliotekę Math i jej metodę pow(liczba, doJakiejPotęgi)
     // np. Math.pow(2,3)
 
-    //public static Double potegowanie (Double z, Double to){
-    //    return Math.pow(z, 3.0);
-    //}
+    public static Double potegowanie(Double z, Double to) {
+        return Math.pow(z, to);
+    }
 
 
     // 6. Napisz metodę, która jako argument przyjmuje liczbę i zwraca jej pierwiastek kwadratowy
     //pierwiastek kwadratowy realizujemy przez bibliotekę Math i jej metodę sqrt(number)
     //Math.sqrt(number)
 
-} //public static Double pierwiastkowanie (Double n){
-  //    return Math.sqrt(n);
-  //}
+    public static Double pierwiastekKwadratowy(Integer n) {
+        return Math.sqrt(n);
+    }
+}
