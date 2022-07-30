@@ -1,5 +1,9 @@
 package pl.cyber.trainees.wyjasnienia;
 
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
+
 public class Petle {
 
     /*
@@ -46,5 +50,95 @@ for(int i = 0; i<5; i--); { -- tzw pętla nieskończona
  remove(); metoda do usuwania rekordów
    */
 
+//  Zadanie nr 1
+//  Wykonać metodę która przyjmie jako parametr List<BigDecimal>, następnie wykona następujące zagadnienia:
+//  a) wyświetli każdy element listy jeden po drugim
+//  b) każdy element listy doda do siebie.
 
+    public void uruchom() {
+        List<BigDecimal> lista = new ArrayList<>();
+        lista.add(BigDecimal.valueOf(10.0));
+        lista.add(BigDecimal.valueOf(2.0));
+        lista.add(BigDecimal.valueOf(5.6));
+        lista.add(BigDecimal.valueOf(21.8));
+        lista.add(BigDecimal.valueOf(2.1));
+        lista.add(BigDecimal.valueOf(41.0));
+        lista.add(BigDecimal.valueOf(14.0));
+        lista.add(BigDecimal.valueOf(1.0));
+        lista.add(BigDecimal.valueOf(4.0));
+
+        rozwiazanieZadania1(lista);
+
+    }
+
+    private void rozwiazanieZadania1(List<BigDecimal> list) {
+        BigDecimal sumaLiczb = BigDecimal.ZERO;
+        for (BigDecimal liczba : list) {
+            System.out.println(liczba);
+            sumaLiczb = sumaLiczb.add(liczba);
+
+        }
+    }
+
+    private void choinkaRozbudowana(Integer wysokoscChoinki) {
+
+        for (int wysokosc = 0; wysokosc < wysokoscChoinki; wysokosc++) {
+            for (int szerokosc = 0; szerokosc < wysokoscChoinki * 2; szerokosc++) {
+                if (szerokosc < (wysokoscChoinki - wysokosc) || szerokosc > (wysokoscChoinki + wysokosc)) {
+                    System.out.print(" ");
+                } else {
+                    System.out.print("*");
+                }
+            }
+            System.out.println();
+        }
+
+
+    }
+
+
+    //zadanie choinka, klasyczne 2 fory. Metoda będzie przyjmować 1 parametr jako wysokosc
+    // nazwac metode
+
+    private void choinkaRozbudowana(Integer wysokoscChoinki) {
+    /*
+    int <-> Integer
+    double <-> Double
+    BigInteger, BigDecimal
+    long <-> Long
+    etc.
+     */
+
+        for (int wysokosc = 0; wysokosc < wysokoscChoinki; wysokosc++) {
+            for (int szerokosc = 0; szerokosc < wysokoscChoinki * 2; szerokosc++) {
+                if (szerokosc < (wysokoscChoinki - wysokosc) || szerokosc > (wysokoscChoinki + wysokosc)) {
+                    System.out.print(" ");
+                } else {
+                    System.out.print("*");
+                }
+            }
+            System.out.println();
+        }
+    }
+
+
+    private void choinkaRozbudowana2(Integer wysokoscChoinki) {
+
+        Integer maksymalnaLiczbaGwiazdek = (wysokoscChoinki * 2) - 1;
+        System.out.println("Liczba gwiazdek w podstawie: " + maksymalnaLiczbaGwiazdek);
+        System.out.println();
+
+        for (int x = 1; x <= maksymalnaLiczbaGwiazdek; x += 2) {  //x = x + 2 ///  x++
+            Integer spacje = (maksymalnaLiczbaGwiazdek - x) / 2;
+            for (int y = 0; y < spacje + x; y++) {
+                if (y < spacje) {
+                    System.out.print(" ");
+                } else {
+                    System.out.print("*");
+                }
+            }
+            System.out.println();
+        }
+    }
 }
+
