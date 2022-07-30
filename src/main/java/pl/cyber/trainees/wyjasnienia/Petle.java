@@ -80,34 +80,12 @@ for(int i = 0; i<5; i--); { -- tzw pętla nieskończona
         }
     }
 
-    private void choinkaRozbudowana(Integer wysokoscChoinki) {
-
-        for (int wysokosc = 0; wysokosc < wysokoscChoinki; wysokosc++) {
-            for (int szerokosc = 0; szerokosc < wysokoscChoinki * 2; szerokosc++) {
-                if (szerokosc < (wysokoscChoinki - wysokosc) || szerokosc > (wysokoscChoinki + wysokosc)) {
-                    System.out.print(" ");
-                } else {
-                    System.out.print("*");
-                }
-            }
-            System.out.println();
-        }
-
-
-    }
-
 
     //zadanie choinka, klasyczne 2 fory. Metoda będzie przyjmować 1 parametr jako wysokosc
     // nazwac metode
 
     private void choinkaRozbudowana(Integer wysokoscChoinki) {
-    /*
-    int <-> Integer
-    double <-> Double
-    BigInteger, BigDecimal
-    long <-> Long
-    etc.
-     */
+
 
         for (int wysokosc = 0; wysokosc < wysokoscChoinki; wysokosc++) {
             for (int szerokosc = 0; szerokosc < wysokoscChoinki * 2; szerokosc++) {
@@ -140,5 +118,19 @@ for(int i = 0; i<5; i--); { -- tzw pętla nieskończona
             System.out.println();
         }
     }
+
+    // Utworzyc metode która wyświetli  liczby  od 1 do  100 (przejdzie po tych liczbach,
+    // ale wyswietli tylko te ktore sa podzielne przez 5
+
+    public void liczbyPodzielnePrzez5() {
+
+        for (int i = 1; i < 101; i++) {
+            if (i % 5 == 0) {
+                System.out.println(i);
+            }
+        }
+    }
 }
+
+
 

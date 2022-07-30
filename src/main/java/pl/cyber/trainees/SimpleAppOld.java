@@ -99,10 +99,11 @@ public class SimpleAppOld {
 
 
         InstrukcjeWarunkowe instrukcjeWarunkowe = new InstrukcjeWarunkowe();
-        InstrukcjeWarunkowe.sprawdzanieWarunku(1);
+        //InstrukcjeWarunkowe.sprawdzanieWarunku(1);
 
         Petle petle = new Petle();
         petle.uruchom();
+        petle.liczbyPodzielnePrzez5();
     }
 
     public String nazwaMEtoda() { //nawias może być pusty lub uzupełniony
