@@ -82,4 +82,18 @@ println("dodawanie nie równe 4"); <- zostanie wyświetlone
     }
     }
 
+   // switch (condition) {
+   //     case 1:
+   //         break;
+    //    case 2:
+   //         break;
+
+   //     .
+   //     .
+   //     .
+   //     default:
+
+    }
+
+
 }

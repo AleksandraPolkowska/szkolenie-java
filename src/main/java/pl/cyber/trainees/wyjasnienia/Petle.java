@@ -121,14 +121,22 @@ for(int i = 0; i<5; i--); { -- tzw pętla nieskończona
 
     // Utworzyc metode która wyświetli  liczby  od 1 do  100 (przejdzie po tych liczbach,
     // ale wyswietli tylko te ktore sa podzielne przez 5
+    // oraz dodanie ich do siebie
+    // a na koniec podanie ile ich znalazł
 
     public void liczbyPodzielnePrzez5() {
+        Integer sumaLiczb = 0;
+        Integer ilośćLiczb = 0;
 
         for (int i = 1; i < 101; i++) {
             if (i % 5 == 0) {
                 System.out.println(i);
+                sumaLiczb+=i; // lub sumaLiczb = sumaLiczb + i
+                ilośćLiczb+=1;
             }
         }
+        System.out.println(sumaLiczb);
+        System.out.println(ilośćLiczb);
     }
 }
 
