@@ -103,11 +103,12 @@ public class SimpleAppOld {
 
         Petle petle = new Petle();
         petle.uruchom();
-        petle.liczbyPodzielnePrzez5();
-        instrukcjeWarunkowe.wyswietlSwitch(5);
-        instrukcjeWarunkowe.petlaZeSwitchem();
-        instrukcjeWarunkowe.uruchom();
-        petle.uruchom();
+       // petle.liczbyPodzielnePrzez5();
+       // instrukcjeWarunkowe.wyswietlSwitch(5);
+       //  instrukcjeWarunkowe.petlaZeSwitchem();
+       // instrukcjeWarunkowe.uruchom();
+
+
     }
 
     public String nazwaMEtoda() { //nawias może być pusty lub uzupełniony

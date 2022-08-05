@@ -70,6 +70,8 @@ for(int i = 0; i<5; i--); { -- tzw pętla nieskończona
         rozwiazanieZadania1(lista);
         pierwszyProgramWhile();
         petlaWszystkomajaca();
+        liczbyPodzielnePrzez5PrzerobioneNaWhile();
+        PetlaWhileZPodwojnymLicznikiem();
 
     }
 
@@ -212,11 +214,46 @@ private void petlaWszystkomajaca (){
     }
 
     // do domu metodę public void tylkoPodzielne() { przerobić na while.
+
+
+    public void liczbyPodzielnePrzez5PrzerobioneNaWhile() {
+        Integer sumaLiczb = 0;
+        Integer ilośćLiczb = 0;
+        Integer i = 0;
+
+        while (i < 101) {
+            i++;
+            if (i % 5 == 0) {
+                System.out.println(i);
+                sumaLiczb+=i; // lub sumaLiczb = sumaLiczb + i
+                ilośćLiczb+=1;
+            }
+        }
+        System.out.println("Suma liczb" + sumaLiczb);
+        System.out.println("ilosc liczb" + ilośćLiczb);
+    }
+
     //zmienna o wartosci 1, wykozystaj while.
     // Podnos licznik x2 do momentu aż liczba nie przekroczy 100
     // oraz wyswietl ile razy pętla się wykonała
 
-    }
+
+
+public void PetlaWhileZPodwojnymLicznikiem(){
+
+        Integer ileRazyPetlaSieWykonala = 0;
+        Integer i = 1;
+
+        while (i <=100){
+          i = i * 2;
+          ileRazyPetlaSieWykonala +=1;
+
+        }
+        System.out.println("Ile razy petla sie wykonala" + ileRazyPetlaSieWykonala);
+ }
+
+
+}
 
 
 
