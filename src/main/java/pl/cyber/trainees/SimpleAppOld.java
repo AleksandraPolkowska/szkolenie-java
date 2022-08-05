@@ -107,6 +107,7 @@ public class SimpleAppOld {
         instrukcjeWarunkowe.wyswietlSwitch(5);
         instrukcjeWarunkowe.petlaZeSwitchem();
         instrukcjeWarunkowe.uruchom();
+        petle.uruchom();
     }
 
     public String nazwaMEtoda() { //nawias może być pusty lub uzupełniony

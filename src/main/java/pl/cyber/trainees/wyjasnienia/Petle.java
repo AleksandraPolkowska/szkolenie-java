@@ -68,6 +68,8 @@ for(int i = 0; i<5; i--); { -- tzw pętla nieskończona
         lista.add(BigDecimal.valueOf(4.0));
 
         rozwiazanieZadania1(lista);
+        pierwszyProgramWhile();
+        petlaWszystkomajaca();
 
     }
 
@@ -138,7 +140,87 @@ for(int i = 0; i<5; i--); { -- tzw pętla nieskończona
         System.out.println(sumaLiczb);
         System.out.println(ilośćLiczb);
     }
+
+    /*
+  WHILE oraz  do While
+
+while - słowo kluczowe określające deklarację pętli while
+do - słowo kluczowe określające deklarację pętli do-while
+(condition) - warunek, który określa nam zakończenie działania pętli, aby pętla while
+zadziałała to piersze srawdzenie musi się nie spełniać
+{} - rozpoczęcie i zakończenie bloku / struktury pętli w ramach tych nawiasów znajduje się kod funkcji, którą ma wykonać program
+
+STRUKTURA DO ZAPAMIĘTANIA:
+  while(condition) {
+  //blok kodu
+  }
+
+  do {
+  //blok kodu
+  } while(condition)
+
+
+int liczba = 1;
+
+while(liczba = 1) {
+println("to jest liczba: " + liczba);
+liczba++;
 }
+
+do {
+println("to jest liczba: " + liczba);
+liczba++;
+} while (liczba = 23)
+   */
+
+    private void pierwszyProgramWhile(){
+        int liczba = 1;
+        while (liczba < 1) {
+            System.out.println("while, to jest liczba: " + liczba);
+            liczba++;
+        }
+        do {
+            System.out.println("do-while, to jest liczba: " + liczba);
+            liczba++;
+        } while (liczba <=23);
+    }
+
+    //wykonac for od 1 do 10 wyswietlic sumę FOR i nastepbie wykonac to samo przy uzyciu while/do-while
+    // oraz wykorzystac if do porownania liczb, jesli sie uzgodnia to wyswietlamy true w przeciwnym wypadku false
+
+private void petlaWszystkomajaca (){
+    Integer sumaLiczbFor = 0;
+    Integer sumaLiczbWhile = 0;
+    int i = 1;
+        for(i=1; i<11; i++){
+        sumaLiczbFor += i;
+        System.out.println(sumaLiczbFor);
+    }
+
+    i = 1;
+            while (i < 11){
+                sumaLiczbWhile +=i;
+                i++;
+                System.out.println(sumaLiczbWhile);
+            }
+     if(sumaLiczbFor == sumaLiczbWhile) {
+         System.out.println(true);
+     }else{
+         System.out.println(false);
+
+     }
+    }
+
+    // do domu metodę public void tylkoPodzielne() { przerobić na while.
+
+    }
+//zmienna o wartosci 1, wykozystaj while.
+    // Podnos licznik x2 do momentu aż liczba nie przekroczy 100
+    // oraz wyswietl ile razy pętla się wykonała
+
+}
+
+
 
 
 
