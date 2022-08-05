@@ -212,13 +212,13 @@ private void petlaWszystkomajaca (){
     }
 
     // do domu metodę public void tylkoPodzielne() { przerobić na while.
-
-    }
-//zmienna o wartosci 1, wykozystaj while.
+    //zmienna o wartosci 1, wykozystaj while.
     // Podnos licznik x2 do momentu aż liczba nie przekroczy 100
     // oraz wyswietl ile razy pętla się wykonała
 
-}
+    }
+
+
 
 
 
