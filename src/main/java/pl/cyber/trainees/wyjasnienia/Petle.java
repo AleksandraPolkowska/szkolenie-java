@@ -56,7 +56,7 @@ for(int i = 0; i<5; i--); { -- tzw pętla nieskończona
 //  b) każdy element listy doda do siebie.
 
     public void uruchom() {
-        List<BigDecimal> lista = new ArrayList<>();
+       /* List<BigDecimal> lista = new ArrayList<>();
         lista.add(BigDecimal.valueOf(10.0));
         lista.add(BigDecimal.valueOf(2.0));
         lista.add(BigDecimal.valueOf(5.6));
@@ -70,7 +70,7 @@ for(int i = 0; i<5; i--); { -- tzw pętla nieskończona
         rozwiazanieZadania1(lista);
         pierwszyProgramWhile();
         petlaWszystkomajaca();
-        liczbyPodzielnePrzez5PrzerobioneNaWhile();
+        liczbyPodzielnePrzez5PrzerobioneNaWhile(); */
         PetlaWhileZPodwojnymLicznikiem();
 
     }
@@ -219,14 +219,14 @@ private void petlaWszystkomajaca (){
     public void liczbyPodzielnePrzez5PrzerobioneNaWhile() {
         Integer sumaLiczb = 0;
         Integer ilośćLiczb = 0;
-        Integer i = 0;
+        Integer i = 1;
 
         while (i < 101) {
-            i++;
             if (i % 5 == 0) {
                 System.out.println(i);
                 sumaLiczb+=i; // lub sumaLiczb = sumaLiczb + i
                 ilośćLiczb+=1;
+                i++;
             }
         }
         System.out.println("Suma liczb" + sumaLiczb);
@@ -249,7 +249,7 @@ public void PetlaWhileZPodwojnymLicznikiem(){
           ileRazyPetlaSieWykonala +=1;
 
         }
-        System.out.println("Ile razy petla sie wykonala" + ileRazyPetlaSieWykonala);
+        System.out.println("Ile razy petla sie wykonala " + ileRazyPetlaSieWykonala);
  }
 
 

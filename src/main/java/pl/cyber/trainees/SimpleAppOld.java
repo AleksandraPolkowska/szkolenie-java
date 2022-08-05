@@ -14,10 +14,7 @@ import java.io.File;  //importy zazwyczaj dodają się same ewemtualnie można j
 
 import pl.cyber.trainees.dziedziczenie.Kolor;
 import pl.cyber.trainees.dziedziczenie.Model;
-import pl.cyber.trainees.wyjasnienia.Basics;
-import pl.cyber.trainees.wyjasnienia.BasicsIntiger;
-import pl.cyber.trainees.wyjasnienia.InstrukcjeWarunkowe;
-import pl.cyber.trainees.wyjasnienia.Petle;
+import pl.cyber.trainees.wyjasnienia.*;
 
 //Linia public class SimpleApp. Opisuje definicję klasy o nazwie SimpleApp.
 //modyfikator dostępu klasy public / private
@@ -101,12 +98,15 @@ public class SimpleAppOld {
         InstrukcjeWarunkowe instrukcjeWarunkowe = new InstrukcjeWarunkowe();
         //InstrukcjeWarunkowe.sprawdzanieWarunku(1);
 
-        Petle petle = new Petle();
-        petle.uruchom();
+      //  Petle petle = new Petle();
+        // petle.uruchom();
+        Silnia silnia = new Silnia();
+        silnia.uruchomSilnia();
        // petle.liczbyPodzielnePrzez5();
        // instrukcjeWarunkowe.wyswietlSwitch(5);
        //  instrukcjeWarunkowe.petlaZeSwitchem();
        // instrukcjeWarunkowe.uruchom();
+
 
 
     }
