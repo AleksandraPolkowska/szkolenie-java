@@ -26,8 +26,5 @@ public class Silnia {
         System.out.println("silnia z liczby " + n + "to" + s);
     }
 
-    private Integer silniaRekurencja(Integer n){  // dane podajemy nie na dole tylko w nawiasie
-
-    }
 
 }
