@@ -8,6 +8,7 @@ package pl.cyber.trainees; ////1. Konstrukcja klass i metod
 
 //region miejsce na importy
 import java.io.File;  //importy zazwyczaj dodają się same ewemtualnie można je dodać poprzez Ctrl + Enter
+import java.io.IOException;
 //poprzez importy powinniśmy rozumieć użycie dodatkowych bibliotek w naszej klasie
 //endregion
 
@@ -46,7 +47,7 @@ public class SimpleAppOld {
     // metody zawsze mają zwykłe nawiasy () a ciało metody w {}
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         // UWAGA NALEŻY PILNOWAĆ KLAMR METODY {} ABY NIE PISAĆ METODY W METODZIE
         // w ramach emtody uruchomieniowej możemy deklarować zmeinne oraz pisać kod, ale dobrą praktyką jest aby ta metoda
@@ -63,53 +64,59 @@ public class SimpleAppOld {
         // jaki typ danych ma zwracac
         // metody powinny byc zwiezle i robic pojedyncze, konkretne rzeczy maksymalnie zawezone operacje
 
-        Basics testKonstr = new Basics(124);
-        Basics basics = new Basics();
-        basics.wyswietlTekst1("Jakiś tekst do wyświetlenia");
+        // Basics testKonstr = new Basics(124);
+        //  Basics basics = new Basics();
+        //  basics.wyswietlTekst1("Jakiś tekst do wyświetlenia");
 
         //drugie rozwiązanie
-        Basics basics2 = new Basics(" Nowy tekst do wyświetlenia ");
-        basics2.wyswietlTekst2("Jakiś tekst do wyświetlenia");
+        //   Basics basics2 = new Basics(" Nowy tekst do wyświetlenia ");
+        //  basics2.wyswietlTekst2("Jakiś tekst do wyświetlenia");
 
 
         //trzecie rozwiązanie
-        Basics basics3 = new Basics("tekst1", "tekst2", " tekst3");
-        basics3.wyswietlTekst3("Jakiś tekst do wyświetlenia");
+        //  Basics basics3 = new Basics("tekst1", "tekst2", " tekst3");
+        //  basics3.wyswietlTekst3("Jakiś tekst do wyświetlenia");
 
-        BasicsIntiger basicsIntiger = new BasicsIntiger();
-        basicsIntiger.wyswietlLiczbe1(1234);
+        //  BasicsIntiger basicsIntiger = new BasicsIntiger();
+        //  basicsIntiger.wyswietlLiczbe1(1234);
 
-        BasicsIntiger basicsIntiger2 = new BasicsIntiger();
-        basicsIntiger2.wyswietlLiczbe2(1234);
+        //  BasicsIntiger basicsIntiger2 = new BasicsIntiger();
+        //  basicsIntiger2.wyswietlLiczbe2(1234);
 
-        BasicsIntiger basicsIntiger3 = new BasicsIntiger();
-        basicsIntiger3.sumowanie("Wynik dodawania", 1, 2);
+        //   BasicsIntiger basicsIntiger3 = new BasicsIntiger();
+        //   basicsIntiger3.sumowanie("Wynik dodawania", 1, 2);
 
         // alternatywa dłuższa gorsza
         //Integer a = 1;
         //Integer b = 2;
         //basicsIntiger.sumowanie (w, a, b);
 
-        String tekst = "wynik";
+        //   String tekst = "wynik";
 //        Basics basics = new Basics();
-        basics.wyswietlTekst1(tekst + basicsIntiger.wynikDodawaniaIntegerow(1, 2));
+        //   basics.wyswietlTekst1(tekst + basicsIntiger.wynikDodawaniaIntegerow(1, 2));
 
 
-        InstrukcjeWarunkowe instrukcjeWarunkowe = new InstrukcjeWarunkowe();
+        //  InstrukcjeWarunkowe instrukcjeWarunkowe = new InstrukcjeWarunkowe();
         //InstrukcjeWarunkowe.sprawdzanieWarunku(1);
 
-      //  Petle petle = new Petle();
+        //  Petle petle = new Petle();
         // petle.uruchom();
-        Silnia silnia = new Silnia();
-        silnia.uruchomSilnia();
-       // petle.liczbyPodzielnePrzez5();
-       // instrukcjeWarunkowe.wyswietlSwitch(5);
-       //  instrukcjeWarunkowe.petlaZeSwitchem();
-       // instrukcjeWarunkowe.uruchom();
+        // Silnia silnia = new Silnia();
+        // silnia.uruchomSilnia();
+        // Tablice tablice = new Tablice();
+        //  tablice.uruchom();
 
+        // petle.liczbyPodzielnePrzez5();
+        // instrukcjeWarunkowe.wyswietlSwitch(5);
+        //  instrukcjeWarunkowe.petlaZeSwitchem();
+        // instrukcjeWarunkowe.uruchom();
 
-
+        Wyjatki wyjatki = new Wyjatki();
+        wyjatki.uruchom();
     }
+}
+/*
+
 
     public String nazwaMEtoda() { //nawias może być pusty lub uzupełniony
         return "";
@@ -123,11 +130,14 @@ public class SimpleAppOld {
         return 0;
 
     }
+    }
+    */
 
 
 
 
-}
+
+
 
 /*
   Warte zapamiętania
