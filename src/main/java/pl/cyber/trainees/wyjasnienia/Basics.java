@@ -57,5 +57,23 @@ public Basics (final Integer parametrKonstruktora) {
         System.out.println(tekst3);
         System.out.println(tekst4);
     }
+    //DTO -> Data Transfer Object
+/*
+Inaczej mówiąc objekt Javowy, którego zadaniem jest przenoszenie specyficznych danych.
+
+Najczęstsze wykorzystanie:
+1) komunikacja klient - server. Innymi słowy Frontend(WEB) - Backend, Aplikacja Moblie - Backend.
+2) komunikacja baza danych - Backend
+
+Cechy szczególne obiektów:
+1) pola (parametry) opisujące konkretny objekt np. Samochod pola samochodu np. Makra, kolor, przebieg, etc.
+2) posiadają konstruktor do prawidłowego utworzenia objektu danej klasy
+3) posiada konkretne metody odwołujące się do utworzonego objektu
+    (metody typu Getter, Setter, toString, etc.)
+4) może posiadać wewnętrznie swój konwerter
+np do konwersji objektu DTO bazy danych(Encji) na objekt do reprezentacji dla aplikacji Frontendowej
+
+ */
+
 }
 
