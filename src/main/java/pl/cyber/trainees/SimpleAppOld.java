@@ -15,7 +15,7 @@ import java.io.IOException;
 
 import pl.cyber.trainees.dziedziczenie.Kolor;
 import pl.cyber.trainees.dziedziczenie.Model;
-import pl.cyber.trainees.wyjasnienia.*;
+import pl.cyber.trainees.wyjasnienia.zwierzeta.*;
 
 //Linia public class SimpleApp. Opisuje definicję klasy o nazwie SimpleApp.
 //modyfikator dostępu klasy public / private
@@ -111,8 +111,15 @@ public class SimpleAppOld {
         //  instrukcjeWarunkowe.petlaZeSwitchem();
         // instrukcjeWarunkowe.uruchom();
 
-        Wyjatki wyjatki = new Wyjatki();
-        wyjatki.uruchom();
+       // Wyjatki wyjatki = new Wyjatki();
+       // wyjatki.uruchom();
+
+//        Obiekty obiekty = new Obiekty();
+//        obiekty.uruchom();
+
+//        pl.cyber.trainees.wyjasnienia.zwierzeta.Obiekty obiektyZwierzeta = new pl.cyber.trainees.wyjasnienia.zwierzeta.Obiekty();
+        Obiekty obiektyZwierzeta = new Obiekty();
+        obiektyZwierzeta.uruchom();
     }
 }
 /*
